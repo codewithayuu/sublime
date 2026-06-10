@@ -1,4 +1,4 @@
-=== Package Control Managed (auto-installed via settings) ===
+=== Package Control Managed ===
 Bracketeer
 BracketGuard
 BracketHighlighter
@@ -23,5 +23,7 @@ SublimeLinter Inline Errors
 Terminus
 Ultimate Dark
 
-=== Manual (copy Packages/ dir manually to preserve) ===
-CPBuddy
+=== Backed up as full Packages/ copy (settings overrides preserved) ===
+CPBuddy          (not on Package Control)
+CppFastOlympicCoding
+LSP-file-watcher-rust

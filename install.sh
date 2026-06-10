@@ -50,12 +50,14 @@ cp "$SCRIPT_DIR/CppFastOlympicCoding/FastOlympicCoding (Linux).sublime-settings"
 cp "$SCRIPT_DIR/CppFastOlympicCoding/TestSyntax.sublime-settings" \
    "$HOME/.config/sublime-text/Packages/CppFastOlympicCoding/"
 
-# ── 5. Copy manual packages (CPBuddy - not on Package Control) ────────
-echo "Copying manual packages..."
-if [ -d "$SCRIPT_DIR/CPBuddy" ]; then
-  rm -rf "$HOME/.config/sublime-text/Packages/CPBuddy"
-  cp -r "$SCRIPT_DIR/CPBuddy" "$HOME/.config/sublime-text/Packages/"
-fi
+# ── 5. Copy full packages (preserve customizations in package dirs) ────
+echo "Copying package overrides..."
+for pkg in CppFastOlympicCoding CPBuddy LSP-file-watcher-rust; do
+  if [ -d "$SCRIPT_DIR/$pkg" ]; then
+    rm -rf "$HOME/.config/sublime-text/Packages/$pkg"
+    cp -r "$SCRIPT_DIR/$pkg" "$HOME/.config/sublime-text/Packages/"
+  fi
+done
 
 # ── 6. Install packages via Package Control ────────────────────────────
 # Packages will be auto-installed when Sublime Text starts with
