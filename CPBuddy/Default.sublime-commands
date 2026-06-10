@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "CPBuddy: Start Background Router",
+        "command": "cpbuddy_start_router"
+    },
+    {
+        "caption": "CPBuddy: Run Test Cases",
+        "command": "cpbuddy_testcases"
+    },
+    {
+        "caption": "CPBuddy: Submit Code",
+        "command": "cpbuddy_submit"
+    },
+    {
+        "caption": "CPBuddy: Delete Problem",
+        "command": "cpbuddy_delete_problem"
+    }
+]

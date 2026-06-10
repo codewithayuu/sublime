@@ -1,0 +1,6 @@
+[
+    { "keys": ["ctrl+shift+u"], "command": "cpbuddy_testcases" },
+    { "keys": ["super+shift+u"], "command": "cpbuddy_testcases" },
+    { "keys": ["ctrl+shift+o"], "command": "cpbuddy_submit" },
+    { "keys": ["super+shift+o"], "command": "cpbuddy_submit" }
+]

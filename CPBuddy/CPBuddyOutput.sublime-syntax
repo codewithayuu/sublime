@@ -1,0 +1,19 @@
+%YAML 1.2
+---
+name: CPBuddy Output
+scope: text.cpbuddy_output
+
+contexts:
+  main:
+    - match: '^(\[AC\])(.*)$'
+      captures:
+        1: markup.inserted
+        2: markup.inserted
+    - match: '^(\[WA\]|\[TLE\]|\[RTE\]|Compilation Error:?)(.*)$'
+      captures:
+        1: markup.deleted
+        2: markup.deleted
+    - match: '^--- Test \d+ ---$'
+      scope: entity.name.class
+    - match: '^(Expected:|Got:)$'
+      scope: keyword.control
