@@ -1,0 +1,27 @@
+=== Package Control Managed (auto-installed via settings) ===
+Bracketeer
+BracketGuard
+BracketHighlighter
+CMake
+CppFastOlympicCoding
+EditorConfig
+FastSwitch
+FileIcons
+GitGutter
+LSP
+LSP-clangd
+LSP-file-watcher-rust
+LSP-pyright
+LSP-rust-analyzer
+LSP-typescript
+Monokai Dark
+Origami
+Package Control
+Paraiso Black Color Scheme
+SideBarEnhancements
+SublimeLinter Inline Errors
+Terminus
+Ultimate Dark
+
+=== Manual (copy Packages/ dir manually to preserve) ===
+CPBuddy

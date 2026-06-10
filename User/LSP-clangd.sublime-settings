@@ -1,0 +1,21 @@
+{
+  "initializationOptions": {
+    "clangd.background-index": true,
+    "clangd.completion-style": "detailed",
+    "clangd.header-insertion": "iwyu",
+    "clangd.header-insertion-decorators": true,
+    "clangd.clang-tidy": true,
+    "clangd.pch-storage": "memory",
+    "clangd.limit-results": 0
+  },
+  "command": [
+    "clangd",
+    "--query-driver=/usr/bin/g++",
+    "--query-driver=/usr/bin/g++-*",
+    "--background-index",
+    "--all-scopes-completion",
+    "--completion-style=detailed",
+    "--pch-storage=memory",
+    "-j=4"
+  ]
+}

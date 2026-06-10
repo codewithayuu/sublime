@@ -1,0 +1,48 @@
+{
+    "font_face": "FiraCode Nerd Font Mono",
+    "font_size": 23,
+
+    "translate_tabs_to_spaces": true,
+    "tab_size": 4,
+
+    "highlight_line": true,
+    "word_wrap": false,
+
+    "auto_complete": true,
+    "auto_complete_delay": 0,
+    "auto_complete_commit_on_tab": false,
+    "auto_complete_with_fields": true,
+    "auto_complete_triggers": [
+        {"selector": "source.c++", "characters": ".:>",},
+        {"selector": "source.cpp", "characters": ".:>",}
+    ],
+
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+
+    "show_git_status": true,
+    "index_files": true,
+
+    "save_on_focus_lost": false,
+
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+
+    "theme": "Monokai True Dark.sublime-theme",
+    "color_scheme": "Monokai True Dark.sublime-color-scheme",
+
+    "scroll_past_end": true,
+    "show_definitions": true,
+
+    "draw_white_space": "selection",
+
+    "highlight_modified_tabs": true,
+
+    "find_selected_text": true,
+
+    "preview_on_click": false,
+
+    "close_windows_when_empty": false,
+}

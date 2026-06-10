@@ -1,0 +1,94 @@
+{
+    "extends": "Adaptive.sublime-theme",
+    "variables": {},
+    "rules": [
+        // Make tabset_control (tab bar container) background black
+        {
+            "class": "tabset_control",
+            "layer0.tint": [0, 0, 0],
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "tabset_control",
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]}],
+            "layer0.tint": [0, 0, 0]
+        },
+        {
+            "class": "tabset_control",
+            "parents": [{"class": "edit_window", "attributes": ["file_medium_dark"]}],
+            "layer0.tint": [0, 0, 0]
+        },
+        {
+            "class": "tabset_control",
+            "parents": [{"class": "edit_window", "attributes": ["file_medium"]}],
+            "layer0.tint": [0, 0, 0]
+        },
+        {
+            "class": "tabset_control",
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
+            "layer0.tint": [0, 0, 0]
+        },
+
+        // Style the tabs (tab_control) - general / inactive state
+        {
+            "class": "tab_control",
+            "layer0.texture": "",
+            "layer0.tint": [20, 20, 20],
+            "layer0.opacity": 1.0,
+            "layer1.texture": "",
+            "layer1.tint": [255, 255, 255, 30],
+            "layer1.inner_margin": [1, 1, 1, 0],
+            "layer1.draw_center": false,
+            "layer1.opacity": 1.0,
+            "layer2.texture": "",
+            "layer2.opacity": 0.0,
+            "layer3.texture": "",
+            "layer3.opacity": 0.0
+        },
+
+        // Selected state
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer0.texture": "",
+            "layer0.tint": [0, 0, 0],
+            "layer0.opacity": 1.0,
+            "layer1.texture": "",
+            "layer1.tint": [255, 255, 255, 120],
+            "layer1.inner_margin": [1, 1, 1, 0],
+            "layer1.draw_center": false,
+            "layer1.opacity": 1.0,
+            "layer2.texture": "",
+            "layer2.opacity": 0.0,
+            "layer3.texture": "",
+            "layer3.opacity": 0.0
+        },
+
+        // Hover state (unselected tab)
+        {
+            "class": "tab_control",
+            "attributes": ["!selected", "hover"],
+            "layer0.texture": "",
+            "layer0.tint": [35, 35, 35],
+            "layer0.opacity": 1.0,
+            "layer1.texture": "",
+            "layer1.tint": [255, 255, 255, 60],
+            "layer1.inner_margin": [1, 1, 1, 0],
+            "layer1.draw_center": false,
+            "layer1.opacity": 1.0
+        },
+
+        // Customize the text labels for the tabs
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["!selected"]}],
+            "fg": [140, 140, 140]
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "fg": [255, 255, 255],
+            "font.bold": true
+        }
+    ]
+}

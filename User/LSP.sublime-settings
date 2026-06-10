@@ -1,0 +1,9 @@
+{
+  "lsp_format_on_save": true,
+  "show_inlay_hints": true,
+  "semantic_highlighting": true,
+  "hover_highlight_timeout": 200,
+  "show_references_in_quick_panel": true,
+  "auto_complete_selector": "source.c++, source.cpp",
+  "diagnostics_panel_include_severity_level": 4
+}
